@@ -2,6 +2,8 @@
 
 void	rev_print(char *str)
 {
+	if (!str)
+		return ;
 	while (*str)
 		str++;
 	str--;

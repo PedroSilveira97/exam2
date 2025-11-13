@@ -6,7 +6,7 @@
 /*   By: ptavares <ptavares@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 20:59:38 by ptavares          #+#    #+#             */
-/*   Updated: 2025/11/13 10:02:49 by ptavares         ###   ########.fr       */
+/*   Updated: 2025/11/13 14:09:00 by ptavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void	rev_print(char *str)
 	while (str[len])
 		len++;
 	i = 0;
+	len--;
 	while (len >= 0)
 	{
 		aux[i] = str[len];

@@ -6,7 +6,7 @@
 /*   By: ptavares <ptavares@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 13:33:30 by ptavares          #+#    #+#             */
-/*   Updated: 2025/11/13 10:05:31 by ptavares         ###   ########.fr       */
+/*   Updated: 2025/11/13 14:05:21 by ptavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar(char c)
 
 void first_word(char *str)
 {
-	while (*str == ' ' && *str)
+	while (*str == ' ' && *str == '	')
 		str++;
 	while (*str && *str != ' ' && *str != '	')
 	{
