@@ -6,7 +6,7 @@
 /*   By: ptavares <ptavares@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 13:43:36 by ptavares          #+#    #+#             */
-/*   Updated: 2025/11/13 14:07:33 by ptavares         ###   ########.fr       */
+/*   Updated: 2025/11/13 14:14:53 by ptavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@ char	*ft_strcpy(char *s1, char *s2)
 	while (*s1)
 		*aux++ = *s1++;
 	*s2 = '\0';
-	return (s2);
+	return (aux);
 }

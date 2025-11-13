@@ -7,6 +7,8 @@ void	rev_print(char *str)
 	while (*str)
 		str++;
 	str--;
+	if (!str)
+		return;
 	while (*str)
 	{
 		write(1, str, 1);
