@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ptavares <ptavares@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/12 20:52:30 by ptavares          #+#    #+#             */
-/*   Updated: 2025/11/13 10:55:33 by ptavares         ###   ########.fr       */
+/*   Created: 2025/11/13 13:43:36 by ptavares          #+#    #+#             */
+/*   Updated: 2025/11/13 13:51:03 by ptavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char	*str)
+char	ft_strcpy(char *s1, char *s2)
 {
-	while (*str)
-	{
-		write(1, str, 1);
-		str++;
-	}
-}
-
-int	main(int ac, char **av)
-{
-	if (ac == 2)
-		ft_putstr(av[1]);
-	write(1, "\n", 1);
-	return (0);
+	while (*s1)
+		*s2++ = *s1++;
+	*s2 = '\0';
+	return (s2);
 }
